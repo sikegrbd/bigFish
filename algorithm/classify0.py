@@ -1,4 +1,11 @@
 def classify0(int x,dataSet,labels,k):
+        """这是一个基于kNN算法的分类器
+      --------------------------
+      args:
+      	int x :       目标特征的坐标              eg. [0,0]
+      	dataSet : 样本特征坐标集              eg. array[[1.,1.1],[1.,1.4],[1.,0],[1.,0.2]]
+      	labels :   与样本对应的特征属类  eg. ['A','A','B','B']
+      --------------------------"""
 	dataSetSize=dataSet.shape[0]
 	diffMat=tile(intX,(dataSetSize,1))
 	sqDiffMat=diffMat**2
